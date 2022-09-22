@@ -19,7 +19,45 @@ Tekst ma być pod szachownicą.
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Szachownica Inline-block</title>
-    <style></style>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .board {
+            width: 30vw;
+            height: 30vw;
+            border: 10px solid black;
+            position: absolute;
+            top: calc(50% - 30vw/2);
+            left: calc(50% - 30vw/2);
+        }
+
+        span {
+            display: inline-block;
+            /* position: relative; */
+            width: 50vw;
+            height: 50vw;
+        }
+
+        .board:nth-child(1) {
+            background-color: red;
+        }
+
+        .board:nth-child(2) {
+            background-color: white;
+        }
+
+        h1 {
+            position: absolute;
+            top: 75%;
+            left: calc(50% - 30vw/2);
+        }
+
+    </style>
 </head>
 
 <body>
